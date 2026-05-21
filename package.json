@@ -1,0 +1,11 @@
+{
+  "name": "asrg",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A static prototype for an adaptive narrative governance simulation.",
+  "scripts": {
+    "start": "python3 -m http.server 4173"
+  },
+  "license": "MIT"
+}

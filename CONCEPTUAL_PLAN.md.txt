@@ -1,0 +1,969 @@
+# ASRG Conceptual Plan
+
+## 1. Core Identity
+
+ASRG is an adaptive narrative governance simulation.
+
+The player is not managing a kingdom through perfect information. The player is ruling through partial visibility, biased advisors, political memory, institutional inertia, rumors, hidden systems, social intermediaries, and long-term adaptive consequences.
+
+The game should feel like governance as epistemic navigation:
+
+- the world has a true underlying simulation state
+- the player never sees that state directly
+- characters, institutions, rumors, logs, and scenes reveal filtered fragments
+- player action changes both the world and what can be known about the world
+- institutions exist structurally, but the player touches them through people
+
+The aim is not to create a normal strategy game with AI flavor. The aim is to create a layered adaptive simulation where narrative emerges from topology, logs, field pressure, partial knowledge, and embodied governance drama.
+
+## 2. Foundational Stack
+
+The updated conceptual stack is:
+
+```text
+Injector/Perturbator = introduces plausible new pressures
+ACES World Layer = owns truth, mutation, topology, fields, logs, memory
+Reader = samples situated reality from a region and observer
+Advisor Manager = interprets sampled reality through bias
+Presenter = turns filtered interpretation into lived player experience
+Player = perceives, chooses, investigates, and acts
+Action Interpreter = translates social choices into structural commands
+ACES World Layer = validates and applies those commands
+```
+
+The critical rule:
+
+```text
+ACES owns reality.
+Narrative layers own perception.
+```
+
+The Presenter may dramatize, compress, symbolize, hint, and frame. It must not invent unsupported truth or directly mutate the world.
+
+The Injector may introduce plausible new actors, pressures, shocks, opportunities, or external signals. Once injected, they enter the ACES World Layer and must be absorbed by topology, logs, and field evolution.
+
+Only the ACES World Layer mutates fields, topology, conductance, logs, knowledge state, memory, and systemic pressure.
+
+## 3. Region Topology
+
+The region is a sparse topology of managed nodes and conductance edges.
+
+Nodes represent adaptive systems. For the first version:
+
+- Court
+- Population
+- Merchants
+- Church
+- Military
+- Black Market
+
+The first topology should be rich enough to create causality but sparse enough to debug:
+
+```text
+        Church
+          |
+Court - Population - Black Market
+  |          |             |
+Military - Merchants -----
+```
+
+Edges do not mean "these two things are related." Edges mean:
+
+```text
+pressure can travel here
+```
+
+First-version edge values:
+
+- conductance
+- trust
+- distortion
+- dependency
+- secrecy
+
+Propagation should be local in v1:
+
+- changes travel mostly one hop per turn
+- no unlimited graph-wide cascades
+- occasional special pressure packets may travel through logs, rumors, or explicit topology rules
+
+This keeps the topology legible while preserving ACES depth.
+
+## 4. Managed Nodes
+
+Each managed node is a semi-autonomous adaptive system.
+
+Each node has:
+
+- identity
+- type/category
+- ACES profile
+- local traits
+- relationships
+- logs
+- visible state
+- hidden state
+- representatives or human interfaces
+
+Nodes should not behave like passive resource containers. They should accumulate memory, react to pressure, distort information, and adapt around constraints.
+
+Institutions should usually be experienced through people:
+
+- the Church through an archbishop, village priest, nun, or radical monk
+- Merchants through a guildmaster, dock foreman, caravan widow, or ledger clerk
+- Military through a general, captain, wounded veteran, or nervous recruit
+- Population through a cook, baker, servant, grieving parent, or market speaker
+- Black Market through a smuggler, tavern broker, desperate thief, or hidden supplier
+
+No single representative fully equals an institution. Each is partial, biased, situated, and limited.
+
+## 5. The Prince As A Node
+
+The prince should be part of the topology, not a floating spreadsheet god.
+
+For v1, keep this light. The prince profile should affect perception, presentation, and conductance rather than act like a conventional RPG combat sheet.
+
+Suggested first traits:
+
+- Presence
+- Perception
+- Composure
+- Empathy
+- Resolve
+- Cunning
+- Vitality
+
+Traits should rarely hard-lock content. They should alter:
+
+- what the player notices
+- how confident a reading feels
+- how advisors behave around the ruler
+- how social pressure transmits
+- how scenes are framed
+- how symbolic moments land
+
+Example:
+
+```text
+Low perception:
+Guildmaster Varro smiles and agrees to cooperate.
+
+High perception:
+Guildmaster Varro smiles and agrees to cooperate.
+His thumb rubs the ledger edge whenever the eastern warehouses are mentioned.
+```
+
+The prince layer can deepen later through trait drift, trauma, succession, injury, training, and generational continuity.
+
+## 6. ACES Profile
+
+The field values should be structural and ACES-like, not overly literal.
+
+First-version ACES profile:
+
+- legitimacy
+- optionality
+- reconstructability
+- tension
+- concentration
+- adaptability
+- participation
+- conductance
+- memory load
+
+These values describe systemic condition. They are not the story itself.
+
+The field should not directly contain:
+
+- bread prices
+- angry sermons
+- night carts
+- missing ledgers
+
+Those belong in logs.
+
+The field should instead express:
+
+- rising tension
+- falling legitimacy
+- distorted conductance
+- shrinking optionality
+- increasing concentration
+- weakening reconstructability
+
+## 7. ACES Calibration And Perspective
+
+ACES values are internal pressure readings, not exact measurements.
+
+They should feel like weather pressure or systemic stress, not hit points. The player should not normally see raw ACES numbers.
+
+The ACES layer needs proportionality so gameplay does not become arbitrary, melodramatic, or fake-precise.
+
+First-version convention:
+
+```text
+Internal ACES values use a normalized 0-100 scale.
+Player-facing presentation uses qualitative bands.
+Proxy cards apply bounded changes.
+Different metrics have different inertia.
+Observers interpret the same field differently.
+```
+
+Suggested player-facing bands:
+
+- 0-19: depleted / dormant / collapsed
+- 20-39: weak / strained / low
+- 40-59: stable / mixed / ordinary
+- 60-79: elevated / pressured / strong
+- 80-100: extreme / volatile / dominant
+
+The exact wording should depend on the metric.
+
+Example:
+
+```text
+Population tension = 68
+
+Generic band:
+elevated / pressured
+
+Presenter expression:
+The market has not erupted, but conversations stop when guards pass.
+```
+
+ACES changes should use rough magnitude bands:
+
+- minor cue: +/- 1
+- meaningful log: +/- 2-4
+- major event: +/- 5-8
+- crisis: +/- 10-15
+- structural shift: rare, larger, usually multi-turn
+
+Metrics should not all move at the same speed.
+
+Fast-moving:
+
+- tension
+- conductance distortion
+- visible participation
+
+Medium-moving:
+
+- legitimacy
+- adaptability
+- optionality
+
+Slow-moving:
+
+- concentration
+- reconstructability
+- memory load
+
+Important proportionality rules:
+
+- legitimacy should usually change slower than tension
+- reconstructability should rarely swing from a single event
+- concentration should build through repeated dependencies or structural choices
+- optionality may shrink faster than it recovers
+- tension may spike quickly but should dissipate if pressure is relieved
+- memory load should accumulate through unresolved logs, not random events
+
+The normal path for ACES mutation should be:
+
+```text
+Action or injector creates a log
+Log triggers one or more proxy cards
+Proxy cards apply bounded ACES effects
+Generator propagates local pressure through topology
+Reader converts values into situated bands
+Presenter reveals qualitative experience
+```
+
+Avoid tuning most actions by directly writing large ACES changes. Actions should usually create logs, change visibility, alter relationships, or introduce pressure packets. Proxy cards and the generator should handle most structural effects.
+
+Different observers may interpret the same raw field differently:
+
+```text
+Population tension = 68
+
+Steward:
+Market discipline is weakening.
+
+Spymaster:
+Rumors are moving faster than orders.
+
+Archbishop:
+The people are beginning to interpret hunger morally.
+
+Player-facing scene:
+The soup line is orderly, but no one laughs when the guards pass.
+```
+
+Debug tools may expose raw ACES values. The normal player experience should expose only interpreted pressure, contradiction, atmosphere, advisor framing, and evidence.
+
+## 8. Proxy Cards
+
+ACES metrics need concrete operational bridges so they do not become abstract vibes.
+
+Proxy cards translate lived events and logs into structural pressure:
+
+```text
+concrete log/event
+-> proxy interpretation
+-> ACES profile adjustment
+-> topology propagation
+-> future logs and consequences
+```
+
+A proxy card contains:
+
+- trigger conditions
+- relevant log tags
+- relevant nodes or edges
+- ACES effects
+- knowledge/visibility effects
+- possible follow-up logs
+- possible presentation cues
+
+Suggested v1 proxy set:
+
+- shortage pressure
+- rumor acceleration
+- coercive overreach
+- hidden market growth
+- legitimacy wound
+- dependency concentration
+- institutional bypass
+- trust repair
+- symbolic mercy
+- elite fragmentation
+- archive/reconstructability gain
+- external shock
+
+Example:
+
+```text
+Proxy: Repeated Shortage Rumor
+
+Triggers:
+- 2+ food/trade rumor logs in recent turns
+- Population legitimacy below stable
+- Merchant trust below medium
+
+Effects:
+- Population tension rises
+- Merchant legitimacy falls
+- Black Market optionality rises
+- Court information distortion rises
+
+Possible exposed signs:
+- thinner soup
+- tavern whispers
+- older flour sacks
+- nervous market guards
+```
+
+Proxy cards are internal in v1. They should be data-shaped so later card composability can become a visible or advanced mechanic without rewriting the core.
+
+## 9. Field Generator
+
+The Region Field Generator updates the living state of the region.
+
+It should operate like simple field physics over the topology:
+
+- nodes influence direct neighbors
+- edge conductance shapes propagation
+- pressure packets move across eligible edges
+- pressure accumulates or dissipates
+- concentration can create brittleness
+- high tension can distort conductance
+- low optionality can increase capture risk
+- strong reconstructability can absorb shocks
+
+For the first version, the generator should remain simple.
+
+It needs enough systemic movement that the world feels causally alive. It does not need fully generalized civilization simulation.
+
+The generator owns causal evolution, but all mutation still belongs to the ACES World Layer.
+
+## 10. Logs As Epistemic Objects
+
+Logs are central.
+
+A log is not just a record of what happened. It is an epistemic object.
+
+Each log should capture:
+
+- what happened
+- when it happened
+- where it happened
+- which nodes were involved
+- which characters were involved
+- what caused it
+- what ACES dimensions it affects
+- what semantic domain it belongs to
+- who knows it
+- who suspects it
+- who witnessed it
+- who is hiding it
+- who is amplifying it
+- how visible it is
+- how reliable it is
+- whether it is true, false, partial, contested, or unknown
+
+This allows the same underlying event to appear differently to different observers.
+
+Example:
+
+```text
+True event:
+Merchant wagons were delayed near the East Gate.
+
+Court sees:
+No confirmed shortage. Reports remain orderly.
+
+Population hears:
+Grain is being hidden.
+
+Spymaster suspects:
+Merchant ledgers contradict gate reports.
+
+Merchants know:
+The delay happened, but the cause is being suppressed.
+```
+
+Logs are evidence, memory, misinformation, and political material.
+
+## 11. Visibility And Knowledge
+
+The player should not automatically know what the engine knows.
+
+Knowledge should be filtered by:
+
+- visibility
+- observer access
+- secrecy
+- suppression
+- rumor conductance
+- institutional permission
+- relationships
+- investigation actions
+- advisor bias
+- prince traits
+
+Basic first-version knowledge levels:
+
+- unknown
+- rumor
+- suspected
+- witnessed
+- documented
+- verified
+- public
+
+Basic first-version visibility levels:
+
+- hidden
+- private
+- factional
+- local
+- institutional
+- public
+
+This makes information part of gameplay.
+
+## 12. Region Field Reader
+
+The reader samples the field.
+
+For the first version, the reader can be generic and region-based:
+
+```text
+readRegion(center, radius, observer)
+```
+
+It reads:
+
+- ACES conditions in the selected region
+- nearby nodes
+- relevant edges
+- unstable relationships
+- recent logs accessible to the observer
+- hidden pressure summaries, if the Presenter needs indirect tension
+- prince trait filters, where relevant
+
+The reader does not need many specialized modes at first.
+
+It should answer:
+
+- what is structurally happening here?
+- which pressures dominate?
+- which nodes are involved?
+- which relationships are unstable?
+- which logs explain the current condition?
+- what can this observer plausibly know?
+
+The reader owns situated access.
+
+## 13. Advisor Manager
+
+Advisors interpret readings.
+
+They should not be neutral helpers. Each advisor has:
+
+- access channels
+- worldview
+- blind spots
+- institutional interests
+- preferred actions
+- fears
+- confidence level
+- possible self-interest
+- relationship to the prince
+
+Advisors may interpret the same reading differently.
+
+Example:
+
+```text
+Rising population tension + declining merchant trust
+
+Steward:
+The market requires stricter accounting.
+
+Spymaster:
+Someone is hiding the real flow of grain.
+
+General:
+Shortage panic can become unrest. Secure the gates.
+
+Archbishop:
+The people need visible mercy before they need orders.
+```
+
+Advisors are both characters and interfaces. They reveal systems through human bias.
+
+## 14. Presenter
+
+The Presenter is perceptual, not ontological.
+
+It receives:
+
+- field readings
+- accessible logs
+- hidden but relevant pressure summaries
+- advisor interpretations
+- current scene context
+- recent player actions
+- prince trait filters
+- dramatic pacing needs
+
+It decides:
+
+- what to reveal
+- what to hint
+- what to withhold
+- which contradiction to surface
+- which advisor or character speaks
+- whether something appears as report, rumor, scene, dialogue, atmosphere, or clue
+
+The Presenter should reveal playable perception, not raw truth.
+
+Rules for the Presenter:
+
+- do not reveal inaccessible hidden truth directly
+- do not invent unsupported actors, crises, or facts
+- use logs, readings, and proxy cues as source material
+- preserve uncertainty unless knowledge has been verified
+- prefer situated clues over exposition
+- let advisors be biased, not omniscient
+- make consequences legible without making systems transparent
+- escalate signals when pressure rises
+
+Example:
+
+```text
+Hidden truth:
+Merchants are hoarding grain.
+
+Player access:
+Servant network has weak local rumors but no proof.
+
+Bad reveal:
+The merchants are hoarding grain.
+
+Good reveal:
+The cook apologizes twice for the soup. She says the flour sacks have begun arriving with old dust on them.
+```
+
+## 15. Injector/Perturbator
+
+The Injector introduces plausible novelty.
+
+It exists because a purely closed simulation can become sterile. Real regions experience shocks, visitors, discoveries, migrations, accidents, rumors, ideological waves, and external pressures.
+
+For v1, keep the Injector minimal and topology-aware.
+
+It may introduce seeds like:
+
+- traveling healer
+- refugee caravan
+- dock dispute
+- foreign merchant
+- strange sermon
+- disease rumor
+- marriage offer
+- old archive discovery
+
+Injector seeds should obey thematic pressure rules. They should read:
+
+- unresolved tensions
+- stagnant systems
+- underused topology
+- missing pressures
+- external-world conditions
+- recent player behavior
+
+Then they introduce a plausible actor, log, pressure packet, or opportunity into the ACES World Layer.
+
+Injected elements must not create scripted outcomes. They enter the topology and consequences emerge later.
+
+Example:
+
+```text
+Injector seed:
+A traveling healer arrives from the south.
+
+Systemic absorption:
+- Church reacts
+- rumors spread
+- population trust shifts
+- nobles compete for access
+- black market sells fake medicine
+- advisor interpretations diverge
+```
+
+## 16. Lists And Governance Inventory
+
+The player accumulates tools that behave like governance inventory.
+
+Visible lists may include:
+
+- advisors
+- decrees
+- institutions
+- alliances
+- public reputation
+- treasury access
+- military authority
+- known rumors
+- verified evidence
+
+Partial lists may include:
+
+- suspicions
+- favors
+- debts
+- personal relationships
+- uncertain reports
+- faction tensions
+
+Hidden system lists may include:
+
+- secret loyalties
+- suppressed scandals
+- hidden fears
+- unresolved trauma
+- unknown dependencies
+- covert actors
+- concealed logs
+
+These lists are not decorative. They expand, constrain, or bias action composition.
+
+Some lists are accessible to the player. Some are only accessible to advisors. Some are completely hidden and only influence structural translation, consequence calculation, or later revelation.
+
+## 17. Composition Action Logic
+
+Player action should be constrained but expressive.
+
+The player-facing layer should be social and embodied:
+
+```text
+Summon Guildmaster Varro privately.
+Question him about missing grain shipments.
+Keep the tone cordial at first.
+```
+
+The engine-facing layer translates that into structural grammar:
+
+```text
+intent: investigate / pressure
+channel: court authority / private meeting
+target: merchants
+tone: cordial but probing
+visibility: private
+```
+
+Action availability should emerge from:
+
+- visible player lists
+- partial knowledge
+- hidden system lists
+- current scene
+- people present
+- prince traits
+- advisor access
+- institutional constraints
+- topology
+- recent logs
+
+Some actions are world-changing. Others are knowledge-changing.
+
+Example:
+
+```text
+Send the cook to keep listening after supper.
+```
+
+This may not change grain distribution directly. It may reveal new logs, upgrade rumors into suspicions, or expose contradictions.
+
+The action system should support tiering later:
+
+- broad social choices for casual play
+- expandable operational detail for advanced play
+- topological manipulation for mastery
+- meta-systemic institutional design for late depth
+
+For v1, keep the UI simple but preserve the structural translation internally.
+
+## 18. AI Configuration And Extensibility
+
+AI should be an optional configurable layer, not the foundation of the simulation.
+
+The game should support multiple Presenter backends:
+
+- template/card-based Presenter
+- local browser AI through WebLLM or similar WebGPU/WebAssembly runtimes
+- user-provided cloud API key
+- later server/proxy AI mode, if public hosted AI becomes necessary
+
+The first playable version should work without any external AI key. This keeps the game deployable on GitHub Pages and lets the simulation prove itself without relying on a powerful model to hide weak systems.
+
+Recommended v1 configuration options:
+
+```text
+AI Mode:
+- Off / Template Presenter
+- Local Browser AI
+- Custom API Key
+```
+
+For Custom API Key mode, the user provides their own key in local browser settings. The key should not be committed, bundled, logged, or sent anywhere except the selected AI provider endpoint.
+
+For Local Browser AI mode, the game may use WebLLM or a similar in-browser runtime. This keeps hosting free and protects player data, but quality and speed depend on the player's device.
+
+For Template Presenter mode, the game uses deterministic presentation cue cards, advisor templates, and log interpretation rules.
+
+The AI adapter interface should stay narrow:
+
+```text
+input:
+- filtered reader output
+- accessible logs
+- advisor interpretations
+- scene context
+- prince perspective
+- allowed revelation constraints
+
+output:
+- player-facing text
+- optional advisor lines
+- optional scene cues
+- no direct world mutation
+```
+
+AI output must obey Presenter rules:
+
+- no direct mutation of ACES state
+- no unsupported facts
+- no hidden truth revelation unless allowed by reader/knowledge state
+- no creation of new actors or crises except through approved Injector paths
+
+Later AI configuration can expand into:
+
+- choosing tone/theme
+- selecting character archetypes
+- generating advisor voices
+- customizing setting genre
+- importing custom lore/material
+- converting custom material into proposed nodes, edges, logs, proxy cards, and injector seeds
+
+Custom material conversion should not directly overwrite the world. It should produce a reviewable draft topology that the player or designer can accept, edit, or reject.
+
+## 19. Internal Card Composability
+
+Cards should be an internal architecture pattern in v1, not necessarily a visible player-facing card game.
+
+Card-like modules may include:
+
+- proxy cards
+- action cards
+- injector cards
+- presentation cue cards
+- advisor interpretation cards
+
+This keeps later composability possible.
+
+An internal action card may contain:
+
+- social surface text
+- structural grammar payload
+- required visible lists
+- hidden modifiers
+- relevant scene contexts
+- possible ACES effects
+- possible knowledge effects
+- possible logs
+
+An internal injector card may contain:
+
+- thematic pressure
+- eligible topology conditions
+- introduced actor/log/pressure
+- dormant or active status
+- absorption rules
+
+The player may later see, collect, combine, or modify cards if that becomes a desirable advanced mechanic. V1 should not depend on visible cards.
+
+## 20. Authoritative Core And Future Multiplayer
+
+Even if v1 runs locally, the architecture should behave like a server-client system.
+
+The ACES World Core is authoritative:
+
+```text
+Client / UI / Presenter
+-> sends player command
+
+Authoritative ACES World Engine
+-> validates command
+-> mutates world
+-> records logs
+-> advances field
+-> returns filtered snapshot/readings
+```
+
+This prepares the project for future multiplayer or multiple observers:
+
+- clients never directly mutate truth
+- hidden logs can stay server-side
+- each observer can receive different filtered readings
+- prince, advisor, spy, merchant, or servant perspectives can exist later
+- saves, replays, and debugging can use serializable commands and snapshots
+
+For v1, this means:
+
+- player actions should be represented as commands
+- world state should be serializable
+- readings should be derived from authoritative state
+- presentation should consume filtered read models, not raw mutable state
+
+No real networking is required in the first prototype.
+
+## 21. First Version Scope
+
+The first version should stay small.
+
+Recommended MVP scope:
+
+- one region
+- six managed nodes
+- one sparse topology graph
+- one simple field generator
+- one generic region reader
+- four advisors
+- light prince profile
+- structured logs with visibility and knowledge
+- ACES calibration with bounded effect sizes and qualitative bands
+- small proxy-card set
+- minimal topology-aware injector
+- social-surface actions translated into structural commands
+- Presenter output as text
+- configurable AI mode with template fallback
+- internal card-shaped data
+- authoritative local world core
+- no complex image generation yet
+- no real multiplayer yet
+- no required external AI service yet
+
+Suggested first nodes:
+
+- Court
+- Population
+- Merchants
+- Church
+- Military
+- Black Market
+
+Suggested first advisors:
+
+- Steward
+- Spymaster
+- General
+- Archbishop
+
+Suggested first loop:
+
+1. Injector may introduce a small pressure seed.
+2. ACES World Core updates node fields through topology.
+3. Proxy cards translate logs/events into structural pressure.
+4. Logs record significant changes, knowledge states, and consequences.
+5. Reader samples a relevant region for the current observer and scene.
+6. Advisor Manager interprets the reading.
+7. Presenter chooses how to reveal perception through reports, scenes, clues, or dialogue.
+8. Player chooses a social action.
+9. Action Interpreter translates the choice into a structural command.
+10. ACES World Core validates and applies the command.
+11. The next turn begins.
+
+## 22. Design Principle
+
+The first playable version should prove one thing:
+
+```text
+Can systemic pressure plus filtered knowledge create meaningful governance stories?
+```
+
+If yes, normal game features can come later:
+
+- UI polish
+- images
+- character portraits
+- achievements
+- save/load
+- generational continuity
+- larger maps
+- more advisors
+- more complex topology
+- richer scene presentation
+- visible card composability
+- configurable AI providers and local models
+- AI-assisted custom settings/topologies
+- true multiplayer/server-client deployment
+
+The foundation should remain:
+
+```text
+Topology creates pressure.
+ACES calibration preserves proportionality.
+Proxy cards translate events into structure.
+Logs create memory and knowledge.
+Visibility creates uncertainty.
+Readers create situated access.
+Advisors create biased interpretation.
+Presenter creates lived experience.
+AI adapters can enhance presentation but must not own truth.
+Injector creates plausible novelty.
+Player action creates new history.
+ACES World Core preserves causal truth.
+```
