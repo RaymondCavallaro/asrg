@@ -1,6 +1,8 @@
 export const actionCards = [
   {
     id: "question-guildmaster",
+    durationTurns: 1,
+    repeatable: false,
     label: "Summon Guildmaster Varro privately",
     detail: "Question him about missing grain shipments while keeping the tone cordial.",
     centerNodeId: "merchants",
@@ -17,8 +19,20 @@ export const actionCards = [
       domainTags: ["trade", "food", "investigation"],
       acesTags: ["conductance", "distortion", "legitimacy"],
       involvedNodes: ["court", "merchants"],
+      involvedCharacters: ["person-court", "person-merchants"],
       visibility: "private",
       knowledge: "suspected",
+    },
+    scene: {
+      id: "varro-private",
+      title: "The guildmaster's gloves",
+      body: [
+        "Guildmaster Varro arrives with his smile arranged before he enters the room. His gloves are clean, but damp at the seams, as if he washed them in a hurry.",
+        "He agrees that winter roads are difficult. He agrees that ledgers can be mistaken. He agrees so quickly that the agreement itself begins to feel like a locked door.",
+        "When you mention the eastern warehouses, his thumb worries the corner of a ledger he has not opened."
+      ],
+      result: "You gain a private suspicion, not proof. The court now knows where to press, and Varro knows he has been noticed.",
+      focusNodeId: "merchants",
     },
     effects: {
       merchants: { tension: 3, legitimacy: -1, conductance: -2 },
@@ -30,6 +44,8 @@ export const actionCards = [
   },
   {
     id: "support-soup-kitchens",
+    durationTurns: 1,
+    repeatable: false,
     label: "Ask Archbishop Sera for public mercy",
     detail: "Support church soup kitchens and make the gesture visible without calling it panic.",
     centerNodeId: "church",
@@ -46,8 +62,20 @@ export const actionCards = [
       domainTags: ["food", "religion", "mercy"],
       acesTags: ["legitimacy", "participation", "tension"],
       involvedNodes: ["church", "population", "court"],
+      involvedCharacters: ["person-church", "person-population", "person-court"],
       visibility: "public",
       knowledge: "public",
+    },
+    scene: {
+      id: "public-mercy",
+      title: "Steam at the chapel doors",
+      body: [
+        "By dusk, steam rises from iron pots at the chapel steps. The Archbishop does not call it charity. She calls it the prince's table extended into the cold.",
+        "People queue quietly. Some bow. Some only hold their bowls with both hands and stare at the bread as if it were a legal document.",
+        "The gesture softens the street, but it also teaches everyone that the palace has seen the hunger."
+      ],
+      result: "The city breathes easier for a day. Mercy buys trust, and trust creates new obligations.",
+      focusNodeId: "church",
     },
     effects: {
       population: { legitimacy: 4, tension: -4, participation: 3 },
@@ -57,6 +85,8 @@ export const actionCards = [
   },
   {
     id: "increase-patrols",
+    durationTurns: 1,
+    repeatable: true,
     label: "Send the captain quietly through the market",
     detail: "Increase visible order, but instruct the captain to listen before intimidating anyone.",
     centerNodeId: "population",
@@ -73,8 +103,20 @@ export const actionCards = [
       domainTags: ["security", "rumor", "market"],
       acesTags: ["tension", "legitimacy", "participation"],
       involvedNodes: ["military", "population"],
+      involvedCharacters: ["person-military", "person-population"],
       visibility: "local",
       knowledge: "witnessed",
+    },
+    scene: {
+      id: "market-patrol",
+      title: "Boots without shouting",
+      body: [
+        "Captain Rusk takes six soldiers through the market without drums, without banners, and without the usual barking at carts.",
+        "The arguments thin as they pass. Not disappear. Thin. A baker's apprentice watches the men count sacks and then looks away too late.",
+        "Order returns to the square, but it returns with witnesses."
+      ],
+      result: "The market grows quieter. Whether that quiet means relief or fear depends on who tells the story tonight.",
+      focusNodeId: "population",
     },
     effects: {
       population: { tension: -2, legitimacy: -1, participation: -1 },
@@ -83,6 +125,8 @@ export const actionCards = [
   },
   {
     id: "listen-to-cook",
+    durationTurns: 1,
+    repeatable: false,
     label: "Let Cook Elian continue speaking",
     detail: "Delay the council schedule and let the kitchen account of flour sacks unfold.",
     centerNodeId: "population",
@@ -99,8 +143,20 @@ export const actionCards = [
       domainTags: ["food", "servants", "evidence"],
       acesTags: ["memoryLoad", "distortion", "conductance"],
       involvedNodes: ["population", "merchants", "court"],
+      involvedCharacters: ["person-population", "person-merchants", "person-court"],
       visibility: "private",
       knowledge: "witnessed",
+    },
+    scene: {
+      id: "cook-testimony",
+      title: "Old dust on new flour",
+      body: [
+        "Cook Elian keeps her hands folded as if she expects someone to punish them for speaking. She says the sacks are new on the outside and old around the mouth.",
+        "The seals do not match last month's deliveries. Two bear warehouse wax. One bears none at all.",
+        "No accusation enters the room. Still, after she leaves, every untouched roll on the council table looks like evidence."
+      ],
+      result: "The palace gains a witness and a thread. Threads are dangerous because they ask to be pulled.",
+      focusNodeId: "population",
     },
     effects: {
       population: { participation: 2, memoryLoad: 2 },

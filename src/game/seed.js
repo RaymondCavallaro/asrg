@@ -117,6 +117,9 @@ export const initialEdges = [
 
 export const prince = {
   name: "Prince Alaric",
+  traitBudget: 393,
+  traitMin: 30,
+  traitMax: 80,
   traits: {
     presence: 62,
     perception: 54,
@@ -131,6 +134,7 @@ export const prince = {
 export const advisors = [
   {
     id: "steward",
+    nodeId: "court",
     name: "Steward Maran",
     role: "Steward",
     lens: "efficiency, accounts, logistics, central order",
@@ -138,6 +142,7 @@ export const advisors = [
   },
   {
     id: "spymaster",
+    nodeId: "blackMarket",
     name: "Ilyra",
     role: "Spymaster",
     lens: "secrecy, contradictions, rumor velocity, hidden incentives",
@@ -145,6 +150,7 @@ export const advisors = [
   },
   {
     id: "general",
+    nodeId: "military",
     name: "General Odran",
     role: "General",
     lens: "force readiness, unrest, obedience, border risk",
@@ -152,6 +158,7 @@ export const advisors = [
   },
   {
     id: "archbishop",
+    nodeId: "church",
     name: "Archbishop Sera",
     role: "Archbishop",
     lens: "mercy, symbolic coherence, moral legitimacy",
