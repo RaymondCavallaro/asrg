@@ -1,3 +1,15 @@
+# Notice
+
+This repository has been folded into ARSG.
+
+ARSG now contains:
+- the original ASRG governance simulation
+- BHG adaptive pressure experiments
+- shared runtime/protocol infrastructure
+- proto-ARS runtime architecture
+
+This repo remains archived for historical/reference purposes.
+
 # ASRG Prototype
 
 An early static prototype for an adaptive narrative governance text game.
