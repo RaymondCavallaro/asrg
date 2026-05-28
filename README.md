@@ -1,4 +1,4 @@
-# Notice
+# Notice - Deprecation
 
 This repository has been folded into ARSG.
 
